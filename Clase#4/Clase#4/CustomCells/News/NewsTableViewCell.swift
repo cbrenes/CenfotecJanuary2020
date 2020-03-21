@@ -13,5 +13,8 @@ class NewsTableViewCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     
-    
+    func setupCell(news: News) {
+        titleLabel.text = news.title
+        dateLabel.text = news.date.getFormatted(dateStyle: .short, timeStyle: .long)
+    }
 }

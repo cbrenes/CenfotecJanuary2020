@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7898D2C2242658F4001FFB46 /* Date+formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7898D2C1242658F4001FFB46 /* Date+formatter.swift */; };
 		78CBCE10241D212100821AE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CBCE0F241D212100821AE6 /* AppDelegate.swift */; };
 		78CBCE12241D212100821AE6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CBCE11241D212100821AE6 /* SceneDelegate.swift */; };
 		78CBCE17241D212100821AE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78CBCE15241D212100821AE6 /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7898D2C1242658F4001FFB46 /* Date+formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+formatter.swift"; sourceTree = "<group>"; };
 		78CBCE0C241D212000821AE6 /* Clase#4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clase#4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78CBCE0F241D212100821AE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78CBCE11241D212100821AE6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +55,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7898D2C0242658E2001FFB46 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7898D2C1242658F4001FFB46 /* Date+formatter.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		78CBCE03241D212000821AE6 = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +82,7 @@
 		78CBCE0E241D212000821AE6 /* Clase#4 */ = {
 			isa = PBXGroup;
 			children = (
+				7898D2C0242658E2001FFB46 /* Extensions */,
 				78CBCE2F241D3E9900821AE6 /* CustomCells */,
 				78CBCE2A241D297800821AE6 /* Models */,
 				78CBCE23241D290700821AE6 /* Controllers */,
@@ -212,6 +223,7 @@
 				78CBCE2E241D29A300821AE6 /* News.swift in Sources */,
 				78CBCE27241D292800821AE6 /* NewsViewController.swift in Sources */,
 				78CBCE2C241D299A00821AE6 /* Category.swift in Sources */,
+				7898D2C2242658F4001FFB46 /* Date+formatter.swift in Sources */,
 				78CBCE38241D4DE600821AE6 /* NewsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
