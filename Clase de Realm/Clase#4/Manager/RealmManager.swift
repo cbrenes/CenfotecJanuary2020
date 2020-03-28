@@ -36,6 +36,20 @@ class RealmManager {
         }
     }
     
+    
+    func removeNews(news: News) {
+        do {
+            //let realm = try! Realm() esto es incorrecto xq esta haciendo un forze unwrap, si por alguna razon es nulo, la aplicación se va a caer
+            let realm = try Realm()
+            try realm.write {
+                realm.delete(news)
+            }
+        } catch {
+            print("Realm falló por alguna razón")
+        }
+    }
+    
+    
     //Obtiene todas las categorias de forma syncrona
     func getAllCategories() -> Results<Category>? {
         let realm = try? Realm()
