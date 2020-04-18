@@ -88,7 +88,7 @@ extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource {
         } else {
             carTypeTextField.text = carTypesList[row]
         }
+        
+        let color = UIColor(displayP3Red: 1, green: 0, blue: 0, alpha: 1)
     }
 }
-
-
