@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4F2FDCD5BB0AE01CD1B057DA /* Pods_RestApiExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD6EF605D14A1F99A5ED84F7 /* Pods_RestApiExample.framework */; };
+		78B8F5FD245484310094AB75 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B8F5FB245484310094AB75 /* CustomTableViewCell.swift */; };
+		78B8F5FE245484310094AB75 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78B8F5FC245484310094AB75 /* CustomTableViewCell.xib */; };
 		78CCC322244B4FAF00671800 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CCC321244B4FAF00671800 /* AppDelegate.swift */; };
 		78CCC324244B4FAF00671800 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CCC323244B4FAF00671800 /* SceneDelegate.swift */; };
 		78CCC326244B4FAF00671800 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CCC325244B4FAF00671800 /* ViewController.swift */; };
@@ -22,6 +24,8 @@
 
 /* Begin PBXFileReference section */
 		5909489F0C3EE79330DC46A9 /* Pods-RestApiExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestApiExample.debug.xcconfig"; path = "Target Support Files/Pods-RestApiExample/Pods-RestApiExample.debug.xcconfig"; sourceTree = "<group>"; };
+		78B8F5FB245484310094AB75 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		78B8F5FC245484310094AB75 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 		78CCC31E244B4FAF00671800 /* RestApiExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestApiExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78CCC321244B4FAF00671800 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78CCC323244B4FAF00671800 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +54,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		78B8F5FA245484160094AB75 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				78B8F5FB245484310094AB75 /* CustomTableViewCell.swift */,
+				78B8F5FC245484310094AB75 /* CustomTableViewCell.xib */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
 		78CCC315244B4FAF00671800 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +102,7 @@
 		78CCC335244B522300671800 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				78B8F5FA245484160094AB75 /* CustomCells */,
 				78CCC336244B523B00671800 /* AlamofireHelper.swift */,
 			);
 			path = Helpers;
@@ -190,6 +204,7 @@
 			files = (
 				78CCC32E244B4FB000671800 /* LaunchScreen.storyboard in Resources */,
 				78CCC32B244B4FB000671800 /* Assets.xcassets in Resources */,
+				78B8F5FE245484310094AB75 /* CustomTableViewCell.xib in Resources */,
 				78CCC329244B4FAF00671800 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +279,7 @@
 			files = (
 				78CCC337244B523B00671800 /* AlamofireHelper.swift in Sources */,
 				78CCC326244B4FAF00671800 /* ViewController.swift in Sources */,
+				78B8F5FD245484310094AB75 /* CustomTableViewCell.swift in Sources */,
 				78CCC33A244B5BCD00671800 /* R.generated.swift in Sources */,
 				78CCC33D244B61A600671800 /* Meme.swift in Sources */,
 				78CCC322244B4FAF00671800 /* AppDelegate.swift in Sources */,

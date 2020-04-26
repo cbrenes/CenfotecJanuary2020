@@ -114,6 +114,41 @@ struct R: Rswift.Validatable {
   }
   #endif
 
+  /// This `R.image` struct is generated, and contains static references to 1 images.
+  struct image {
+    /// Image `default`.
+    static let `default` = Rswift.ImageResource(bundle: R.hostingBundle, name: "default")
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "default", bundle: ..., traitCollection: ...)`
+    static func `default`(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.`default`, compatibleWith: traitCollection)
+    }
+    #endif
+
+    fileprivate init() {}
+  }
+
+  /// This `R.nib` struct is generated, and contains static references to 1 nibs.
+  struct nib {
+    /// Nib `CustomTableViewCell`.
+    static let customTableViewCell = _R.nib._CustomTableViewCell()
+
+    #if os(iOS) || os(tvOS)
+    /// `UINib(name: "CustomTableViewCell", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.customTableViewCell) instead")
+    static func customTableViewCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.customTableViewCell)
+    }
+    #endif
+
+    static func customTableViewCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> CustomTableViewCell? {
+      return R.nib.customTableViewCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? CustomTableViewCell
+    }
+
+    fileprivate init() {}
+  }
+
   fileprivate struct intern: Rswift.Validatable {
     fileprivate static func validate() throws {
       try _R.validate()
@@ -133,6 +168,23 @@ struct _R: Rswift.Validatable {
     try storyboard.validate()
     #endif
   }
+
+  #if os(iOS) || os(tvOS)
+  struct nib {
+    struct _CustomTableViewCell: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "CustomTableViewCell"
+
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> CustomTableViewCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? CustomTableViewCell
+      }
+
+      fileprivate init() {}
+    }
+
+    fileprivate init() {}
+  }
+  #endif
 
   #if os(iOS) || os(tvOS)
   struct storyboard: Rswift.Validatable {

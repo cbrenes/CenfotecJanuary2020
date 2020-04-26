@@ -30,5 +30,4 @@ class Category: Object {
     override static func indexedProperties() -> [String] {
         return ["identifier"]
     }
-    
 }
